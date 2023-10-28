@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 function Nav(){
     return (
         <>
             <img className="logo" src="" alt="logo"/>
             <ul className="navigation">
-                <li>Home</li>
-                <li>About</li>
-                <li>News</li>
-                <li>Board</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/news">News</Link></li>
+                <li><Link to="/board">Board</Link></li>
             </ul>
             <ul className="language">
                 <li>English</li>

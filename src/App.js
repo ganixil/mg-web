@@ -1,19 +1,14 @@
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
-import Gallery from './components/Gallery';
-import About from './components/About';
-import Board from './components/Board';
-import News from './components/News';
+import Routing from './pages/Routing';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Nav/>
-      <Gallery/>
-      <News/>
-      <About/>
-      <Board/>
-    </>    
+      <Routing />
+    </BrowserRouter>    
   );
 }
 

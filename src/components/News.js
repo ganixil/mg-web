@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import data from '../data/news';
-import Article from './Article';
 function News(){
     //const maxArticle = 10;
     return(

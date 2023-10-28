@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import data from '../data/news';
 import Article from './Article';
 function News(){
@@ -5,10 +6,9 @@ function News(){
     return(
         <>
             {data.map((article) => 
-                <Article 
-                    title={article.title}
-                    content={article.content}
-                    />
+                <Link to='/news/article' state={{ title: article.title, content: article.content}}>
+                    <h2>{article.title}</h2>
+                </Link>
             )}  
         </>
     );

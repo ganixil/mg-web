@@ -1,7 +1,7 @@
 import data from '../data/news';
 import Article from './Article';
 function News(){
-    const maxArticle = 10;
+    //const maxArticle = 10;
     return(
         <>
             {data.map((article) => 

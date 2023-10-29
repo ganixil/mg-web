@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import { Dropdown } from "react-bootstrap";
+import "../styles/Nav.css"
 
 function Nav(){
     return (
-        <>
-            <img className="logo" src="" alt="logo"/>
+        <div className="navbar">
+            <div className="logo">
+                <Link to="/"><img src={logo} alt="logo"/></Link>
+            </div>
+            
             <ul className="navigation">
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/news">News</Link></li>
                 <li><Link to="/board">Board</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
             </ul>
-            <ul className="language">
-                <li>English</li>
-                <li>Language Option1</li>
-                <li>Language Option2</li>
-                <li>Language Option3</li>
-            </ul>
-        </>
+        </div>
     );
 }
 

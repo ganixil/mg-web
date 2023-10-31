@@ -1,0 +1,21 @@
+.articleContainer {
+    border: 2px dotted black;
+}
+.articleContainer h1,h2, p{
+    padding-left: 0.5rem;
+    text-align: left;
+}
+.articleContainer a{
+    text-decoration: none;
+}
+.articleContainer p{
+    color: darkgray;
+}
+
+@media only screen and (min-width:30rem){
+    .articleContainer{
+        margin-left: 1rem;
+        height: 60vh;
+        overflow-y: auto;
+    }
+}

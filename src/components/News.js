@@ -12,7 +12,7 @@ function News(){
                 <Link to='/news/article' state={{ title: article.title, content: article.content, date: article.date}}>
                     <div className='news-title'>
                         <h2>{article.title}</h2>
-                        {article.weight == "new" &&
+                        {article.weight === "new" &&
                         <h2 className='tag' >New!!</h2>
                         }
                     </div> 

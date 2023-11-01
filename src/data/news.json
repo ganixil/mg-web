@@ -1,9 +1,9 @@
 [
         {
-            "title":"Article Title 1",
+            "title":"Welcome message",
             "weight":"new",
-            "date":"2023-01-01",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "date":"2023-11-01",
+            "content":"<p>It is with enormous pride and excitement that we welcome you to our brand new website. Right now it is your go-to place for all the news about the co-op, but soon it will be interactive and you will be able to download forms, and upload your questions, information, and required forms.</p> <ul><li>Click on the various articles to learn about the ways the co-op has initiated significant cost-saving measures.</li> <li>What's ahead for all co-ops with the new local laws.</li> <li>Download forms, Co-op rules, bylaws and more</li> <li>Read notices and click to have them translated</li> <li>Read about your board and ways for you to get involved!</li></ul> <p>Special thanks go to newly elected board member from building 2, Sean Li, who built this website for us at no cost!</p> <b>Please enjoy!</b> <p>Send your ideas and feedback to: mitchellgardens1@aol.com</p>"
         },
         {
             "title":"Article Title 2",

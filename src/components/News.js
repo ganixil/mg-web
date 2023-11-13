@@ -7,7 +7,7 @@ function News(){
 
     return(
         <div className="articleContainer">
-            <h1>Coop News</h1>
+            <Link to="/news"><h1>Coop News</h1></Link>
             {data.map((article) => 
                 <Link to='/news/article' state={{ title: article.title, content: article.content, date: article.date}}>
                     <div className='news-title'>

@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import parse from 'html-react-parser';
-import '../styles/ArticlePage.css'
+import '../styles/pages/ArticlePage.css'
 function ArticlePage(){
     const location = useLocation()
     const { title, content,date} = location.state;

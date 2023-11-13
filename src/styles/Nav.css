@@ -6,7 +6,7 @@
 .navigation{
     list-style: none;
     padding:0;
-    background: #333;
+    background: #022a60;
 }
 
 .navigation li a{
@@ -20,7 +20,7 @@
 
 /* styling logo */
 .logo{
-    background: #222;
+    background: #022a60;
     line-height: 0;
     padding: 0.8rem 0rem;
     text-align: center;
@@ -42,7 +42,7 @@
     .navbar{
         display: flex;
         justify-content: space-between;
-        background:#222;
+        background:#022a60;
     }
     .navbar ul{
         display: flex;

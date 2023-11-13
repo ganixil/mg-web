@@ -34,9 +34,9 @@ function Gallery(){
         },
     ];
     return(
-        <>
+        <div className="imageGalleryWrapper">
             <ImageGallery items={images} />
-        </>
+        </div>
     );
 }
 

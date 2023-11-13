@@ -3,6 +3,7 @@ function AboutPage(){
     return (
         <>
             <About/>
+            
         </>
     )
 

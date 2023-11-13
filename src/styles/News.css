@@ -5,6 +5,9 @@
     padding-left: 0.5rem;
     text-align: left;
 }
+.articleContainer h1{
+    color: black
+}
 .articleContainer a{
     text-decoration: none;
 }

@@ -1,0 +1,16 @@
+.presMessage{
+    border: 2px solid black;
+}
+
+@media only screen and (min-width:30rem){
+    .presMessage{
+        margin-left: 1vw;
+        margin-right: 5px;
+        border: 2px solid black;
+        box-shadow: 5px 5px;
+        border-radius: 5%;
+        height: 600px;
+        overflow-y: auto;
+    }
+}
+

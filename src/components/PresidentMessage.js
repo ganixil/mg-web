@@ -1,3 +1,4 @@
+import '../styles/PresidentMessage.css';
 function PresidentMessage(){
     return(
         <div className="presMessage">

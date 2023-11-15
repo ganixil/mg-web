@@ -1,11 +1,7 @@
-.home{
-    display: grid;
-    grid-template-rows: 1fr 1fr auto;
-}
+
 .topPanel{
     align-items: start;
     text-align: center;
-    
 }
 
 .bottomPanel{
@@ -16,14 +12,22 @@
 /* responsive design */
 
 @media only screen and (min-width:30rem){
+    .home{
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+
     .topPanel{
         display: grid;
-        grid-template-columns: 30% 40% 30%;
+        grid-template-columns: 25% 75%;
         margin: 10px;
+        height: 650px;
+        align-items: center;
     }
 
     .bottomPanel{
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
     }
 }

@@ -7,15 +7,20 @@ import "../styles/pages/HomePage.css";
 function HomePage(){
     return (
         <div className="home">
-            <div className="topPanel"> 
-                <PresidentMessage />
-                <Gallery />
+            <div className="leftPanel">
+                <div className="topPanel"> 
+                    <PresidentMessage />
+                    <Gallery />
+                </div>
+                <div className="bottomPanel">
+                    <About />
+                    <Contact />
+                </div>
+            </div>
+            <div className="rightPanel">
                 <News />
             </div>
-            <div className="bottomPanel">
-                <About />
-                <Contact />
-            </div>
+
         </div>
     );
 }

@@ -1,10 +1,9 @@
-
-function BoardPage(){
+function DocumentPage(){
     return(
         <>
-            <h1>Current Board Information</h1>
+            <h1>Some Document Listed</h1>
             <ul>
-                <li>Some info about board</li>
+                <li>Some Document</li>
                 <li>Info</li>
                 <li>Info</li>
                 <li>Info</li>
@@ -14,4 +13,4 @@ function BoardPage(){
     );
 }
 
-export default BoardPage;
+export default DocumentPage;

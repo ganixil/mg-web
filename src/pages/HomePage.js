@@ -2,8 +2,9 @@ import Gallery from "../components/Gallery";
 import News from "../components/News";
 import PresidentMessage from "../components/PresidentMessage";
 import About from "../components/About";
-import Contact from "../components/Contact";
+import Document from "../components/Document";
 import "../styles/pages/HomePage.css";
+import InfoCard from "../components/InfoCard";
 function HomePage(){
     return (
         <div className="home">
@@ -14,7 +15,8 @@ function HomePage(){
                 </div>
                 <div className="bottomPanel">
                     <About />
-                    <Contact />
+                    <Document />
+                    <InfoCard />
                 </div>
             </div>
             <div className="rightPanel">

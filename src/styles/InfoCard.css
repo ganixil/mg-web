@@ -1,12 +1,9 @@
-.aboutContainer{
-    width: 100%;
-    height: 100%;
+.infoCardContainer{
     background-image: linear-gradient(to right, #8dffbe, white);
 }
 
-
 @media only screen and (min-width:30rem){
-    .aboutContainer{
+    .infoCardContainer{
         margin-left: 1rem;
     }
 }

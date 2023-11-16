@@ -2,9 +2,10 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
 import AboutPage from "./AboutPage";
 import NewsPage from "./NewsPage";
-import BoardPage from "./BoardPage";
 import ArticlePage from "./ArticlePage";
 import ContactPage from "./ContactPage";
+import EventPage from "./EventPage";
+import DocumentPage from "./DocumentPage";
 function Routing() {
     return (
       <Routes>
@@ -14,11 +15,15 @@ function Routing() {
   
         <Route path="/news" element={<NewsPage />} />
 
-        <Route path="/board" element={<BoardPage />} />
+        <Route path="/event" element={<EventPage />} />
 
         <Route path="/contact" element={<ContactPage />} />
 
+        <Route path="/document" element={<DocumentPage />} />
+
         <Route path="/news/article" element={<ArticlePage />}/>
+
+
       </Routes>
     );
   }

@@ -14,7 +14,8 @@ function Nav(){
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/news">News</Link></li>
-                <li><Link to="/board">Board</Link></li>
+                <li><Link to="/event">Event</Link></li>
+                <li><Link to="/document">Document</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
             </ul>
         </div>

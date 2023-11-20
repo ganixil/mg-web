@@ -19,7 +19,7 @@ function Calendar(){
                   singleEvents: true,
                   timeMin: (new Date()).toISOString(),
                   showDeleted: false,
-                  maxResult: 5,
+                  maxResults: 3,
                   orderBy: 'startTime'
                 }  
               });

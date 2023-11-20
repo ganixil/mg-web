@@ -1,0 +1,20 @@
+.eventContainer h1{
+    text-decoration: underline;
+}
+
+.eventContainer ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 15px;
+}
+.eventContainer li{
+    
+    border: 1px dotted darkgray;
+    margin-right:10px;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.eventContainer li p{
+    text-align: center;
+}

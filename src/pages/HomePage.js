@@ -5,6 +5,7 @@ import About from "../components/About";
 import Document from "../components/Document";
 import "../styles/pages/HomePage.css";
 import InfoCard from "../components/InfoCard";
+import Calendar from "../components/Calendar";
 function HomePage(){
     return (
         <div className="home">
@@ -21,6 +22,7 @@ function HomePage(){
             </div>
             <div className="rightPanel">
                 <News />
+                <Calendar />
             </div>
 
         </div>

@@ -1,3 +1,32 @@
-.documentPage ul{
-    list-style: none;
+.documentPage table{
+    display: block;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    overflow-x: auto;
+}
+.documentPage table th{
+    background-color: lightgray;
+}
+
+.documentPage table th,td{
+    border-bottom: 1px solid darkgray;
+    padding: 8px;
+}
+
+.documentPage table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+.documentPage table tr:hover{
+    background-color: #ddd;
+}
+
+.documentPage table td a{
+    display: block;
+    padding-left: 20px;
+}
+@media only screen and (min-width:30rem){
+    .documentPage table{
+        display: table;
+    }
 }

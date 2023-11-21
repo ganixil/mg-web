@@ -10,13 +10,43 @@ import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
 function Document(){
     return(
         <div className='documentContainer'>
-            <h1><Link to="/document"> Helpful Document</Link></h1>
+            <h1><Link to="/document"> Helpful Documents</Link></h1>
             <ul>
-                <li><Link to={doc1} target="_blank" download><FontAwesomeIcon icon={faFile} /> &nbsp; <FontAwesomeIcon icon={faDownload} />&nbsp; Test PDF Document</Link></li>
-                <li><Link to={doc2} target="_blank" download><FontAwesomeIcon icon={faFile} /> &nbsp; <FontAwesomeIcon icon={faDownload} />&nbsp; Test Word Document</Link></li>
-                <li><Link to={doc3} target="_blank" download><FontAwesomeIcon icon={faFile} /> &nbsp; <FontAwesomeIcon icon={faDownload} />&nbsp; Test Image </Link></li>
-                <li><Link to={doc4} target="_blank" download><FontAwesomeIcon icon={faFile} /> &nbsp; <FontAwesomeIcon icon={faDownload} />&nbsp; Test PowerPoint</Link></li>
-                <li><Link to={doc5} target="_blank" download><FontAwesomeIcon icon={faFile} /> &nbsp; <FontAwesomeIcon icon={faDownload} />&nbsp; Test Text File</Link></li>
+                <li>
+                    <Link to={doc1} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} /> &nbsp; 
+                        <FontAwesomeIcon icon={faDownload} />&nbsp; 
+                        Test PDF Document
+                        </Link>
+                </li>
+                <li>
+                    <Link to={doc2} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} /> &nbsp;
+                         <FontAwesomeIcon icon={faDownload} />&nbsp;
+                          Test Word Document
+                    </Link>
+                </li>
+                <li>
+                    <Link to={doc3} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} /> &nbsp; 
+                        <FontAwesomeIcon icon={faDownload} />&nbsp; 
+                        Test Image 
+                    </Link>
+                </li>
+                <li>
+                    <Link to={doc4} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} /> &nbsp; 
+                        <FontAwesomeIcon icon={faDownload} />&nbsp;
+                         Test PowerPoint
+                    </Link>
+                </li>
+                <li>
+                    <Link to={doc5} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} /> &nbsp; 
+                        <FontAwesomeIcon icon={faDownload} />&nbsp; 
+                        Test Text File
+                    </Link>
+                </li>
             </ul>
         </div>
     );

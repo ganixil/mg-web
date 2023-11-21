@@ -8,22 +8,63 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../styles/pages/DocumentPage.css';
 function DocumentPage(){
+
     return(
         <div className='documentPage'>
             <h1>Helpful Documents</h1>
-            <ul>
-                <li>
-                    <Link to={doc1} target="_blank" download>
-                        <FontAwesomeIcon icon={faFile} />
-                        Test PDF Document
-                        <FontAwesomeIcon icon={faDownload} />
-                    </Link>
-                </li>
-                <li><Link to={doc2} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Word Document</Link></li>
-                <li><Link to={doc3} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Image </Link></li>
-                <li><Link to={doc4} target="_blank" download><FontAwesomeIcon icon={faFile} />Test PowerPoint</Link></li>
-                <li><Link to={doc5} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Text File</Link></li>
-            </ul>
+            <table>
+                <tr>
+                    <th>File Name</th>
+                    <th>Upload Date</th>
+                    <th>Download</th>
+                </tr>
+                {/** Add tr below for addition table row on files*/ }
+                <tr>
+                    <td> <FontAwesomeIcon icon={faFile} /> Test_PDF_Document.pdf</td>
+                    <td>2023-11-21</td>
+                    <td>
+                        <Link to={doc1} target="_blank" download>
+                            <FontAwesomeIcon icon={faDownload} />
+                        </Link>    
+                    </td>
+                </tr>
+                <tr>
+                    <td> <FontAwesomeIcon icon={faFile} /> Test_Word_Document.docx</td>
+                    <td>2023-11-21</td>
+                    <td>
+                        <Link to={doc2} target="_blank" download>
+                            <FontAwesomeIcon icon={faDownload} />
+                        </Link>    
+                    </td>
+                </tr>
+                <tr>
+                    <td> <FontAwesomeIcon icon={faFile} /> Test_Image_Document.png</td>
+                    <td>2023-11-21</td>
+                    <td>
+                        <Link to={doc3} target="_blank" download>
+                            <FontAwesomeIcon icon={faDownload} />
+                        </Link>    
+                    </td>
+                </tr>
+                <tr>
+                    <td> <FontAwesomeIcon icon={faFile} /> Test_PowerPoint_Document.ppt</td>
+                    <td>2023-11-21</td>
+                    <td>
+                        <Link to={doc4} target="_blank" download>
+                            <FontAwesomeIcon icon={faDownload} />
+                        </Link>    
+                    </td>
+                </tr>
+                <tr>
+                    <td> <FontAwesomeIcon icon={faFile} /> Test_Text_file.txt</td>
+                    <td>2023-11-21</td>
+                    <td>
+                        <Link to={doc5} target="_blank" download>
+                            <FontAwesomeIcon icon={faDownload} />
+                        </Link>    
+                    </td>
+                </tr>
+            </table>
         </div>
     );
 }

@@ -4,7 +4,8 @@ import { css } from "@emotion/react";
 function EventPage(){
     const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
     let calendars = [
-        {calendarId: process.env.REACT_APP_GOOGLE_CALENDAR_ID,color: "#B241D1"}
+        {calendarId: process.env.REACT_APP_GOOGLE_CALENDAR_ID,color: "#B241D1"},
+        {calendarId: "en.usa#holiday@group.v.calendar.google.com"}
     ];
 
     let styles = {

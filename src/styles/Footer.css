@@ -32,6 +32,7 @@
 }
 .footer_content img{
     width: 100%;
+    max-width: 300px;
     height:auto;
     object-fit: cover;
     align-items: center;

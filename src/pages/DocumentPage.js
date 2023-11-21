@@ -1,15 +1,30 @@
+import { Link } from 'react-router-dom';
+import doc1 from '../assets/documents/DummyDocPdf.pdf';
+import doc2 from '../assets/documents/DummyDocWord.docx';
+import doc3 from '../assets/documents/DummyImage.png';
+import doc4 from '../assets/documents/DummyPowerPoint.ppt';
+import doc5 from '../assets/documents/DummyTextFile.txt';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
+import '../styles/pages/DocumentPage.css';
 function DocumentPage(){
     return(
-        <>
-            <h1>Some Document Listed</h1>
+        <div className='documentPage'>
+            <h1>Helpful Documents</h1>
             <ul>
-                <li>Some Document</li>
-                <li>Info</li>
-                <li>Info</li>
-                <li>Info</li>
-                <li>Info</li>
+                <li>
+                    <Link to={doc1} target="_blank" download>
+                        <FontAwesomeIcon icon={faFile} />
+                        Test PDF Document
+                        <FontAwesomeIcon icon={faDownload} />
+                    </Link>
+                </li>
+                <li><Link to={doc2} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Word Document</Link></li>
+                <li><Link to={doc3} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Image </Link></li>
+                <li><Link to={doc4} target="_blank" download><FontAwesomeIcon icon={faFile} />Test PowerPoint</Link></li>
+                <li><Link to={doc5} target="_blank" download><FontAwesomeIcon icon={faFile} />Test Text File</Link></li>
             </ul>
-        </>
+        </div>
     );
 }
 

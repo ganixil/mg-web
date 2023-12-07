@@ -9,12 +9,14 @@ function ContactPage(){
     const form = useRef();
 
     const sendEmail = (e) => {
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        e.preventDefault();
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        window.alert("Thank you for submitting, we will be in contact soon");
     };
 
     const retriveApartmentNumbers = () =>{

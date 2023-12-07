@@ -57,7 +57,7 @@ function ContactPage(){
         <select name="apartment" required>
             <option disabled selected value=""> -- Select your apartment number -- </option>
             {retriveApartmentNumbers().map((apt) =>
-                <option value="{apt}">{apt}</option>
+                <option value={apt}>{apt}</option>
             )}
         </select>
         <input type="submit" value="Send" />

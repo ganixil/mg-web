@@ -5,5 +5,8 @@
         margin:0 auto;
         max-width: 900px;
     }
+    .image-gallery-slides {
+        max-height: 550px;
+    }
     
 }

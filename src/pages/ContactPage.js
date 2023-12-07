@@ -53,6 +53,17 @@ function ContactPage(){
         <label>Message</label>
         <textarea name="message" placeholder='your message ...' required/>
 
+        <label>Building #</label>
+        <select name="building" required>
+            <option disabled selected value=""> -- Select your building number -- </option>
+            <option value="139-10_Building1">139-10 (Building #1)</option>
+            <option value="139-16_Building1">139-16 (Building #1)</option>
+            <option value="140-08_Building2">140-08 (Building #2)</option>
+            <option value="140-14_Building2">140-14 (Building #2)</option>
+            <option value="141-10_Building3">141-10 (Building #3)</option>
+            <option value="141-16_Building3">141-16 (Building #3)</option>
+        </select>
+
         <label>Apartment #</label>
         <select name="apartment" required>
             <option disabled selected value=""> -- Select your apartment number -- </option>

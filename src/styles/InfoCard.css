@@ -1,9 +1,8 @@
-.infoCardContainer{
-    background-image: linear-gradient(to right, #8dffbe, white);
-}
 
 @media only screen and (min-width:30rem){
     .infoCardContainer{
+        background-image: linear-gradient(to right, #8dffbe, white 30%);
         margin-left: 1rem;
+        border-bottom: 1px solid gray;
     }
 }

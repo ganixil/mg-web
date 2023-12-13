@@ -14,7 +14,8 @@
 }
 .footer_content nav ul{
     list-style: none;
-    text-align: left;
+    text-align: center;
+    padding-inline-start: 0;
 }
 
 .footer_content nav ul a{
@@ -25,6 +26,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .footer_content nav ul a:hover{

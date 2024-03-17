@@ -1,0 +1,10 @@
+.lang-select{
+    font-size: 100%;
+    font-family: "Helvetica",sans-serif;
+    border: 0px;
+    outline: 0px;
+    background: #022a60;
+    color:white;
+    text-align-last: center;
+    width: 150px;
+}

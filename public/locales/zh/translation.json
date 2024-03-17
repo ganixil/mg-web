@@ -1,0 +1,41 @@
+{
+    "app":{
+        "home": "主页",
+        "about":"有关",
+        "news":"新闻",
+        "event":"活动",
+        "document":"文档",
+        "contact_us":"联系我们"
+    },
+    "home":{
+        "p_msg":"管理委员的一段话",
+        "coop_news":{
+            "title": "Coop 新闻",
+            "more":"更多新闻",
+            "less":"收起"
+        },
+        "about":"有关 Mitchell Gardens #1 Coop Corp",
+        "document":"有帮助的文件",
+        "event": {
+            "event-title":"活动",
+            "more":"更多活动"
+        }
+    },
+    "contact_us":{
+        "title":"联系我们",
+        "topic":"主题",
+        "name":"姓名",
+        "email":"邮箱",
+        "phone":"电话",
+        "message":"您想说的信息",
+        "building":"楼",
+        "apartment":"公寓"
+    },
+    "language-selector":{
+        "label": "语言",
+        "languages":{
+            "en":"English",
+            "zh":"中文"
+        }
+    }
+}

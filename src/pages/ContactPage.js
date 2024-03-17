@@ -1,12 +1,15 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/pages/ContactPage.css'
+import { useTranslation } from 'react-i18next';
 function ContactPage(){
     const SERVICE_ID = process.env.REACT_APP_EMAIL_ID;
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
     const PUBLIC_KEY = process.env.REACT_APP_EMAIL_PUBLIC_KEY;
 
     const form = useRef();
+
+    const {t} = useTranslation();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -32,8 +35,8 @@ function ContactPage(){
   
     return (
       <form className="contactus_form" ref={form} onSubmit={sendEmail}>
-        <h1>Contact Us</h1>
-        <label>Topic</label>
+        <h1>{t('contact_us.title')}</h1>
+        <label>{t('contact_us.topic')}</label>
         <select name="topic" required>
             <option disabled selected value=""> -- Select a topic -- </option>
             <option value="Contact">Contact</option>
@@ -41,19 +44,19 @@ function ContactPage(){
             <option value="Other">Other</option>
         </select>
 
-        <label>Name</label>
+        <label>{t('contact_us.name')}</label>
         <input type="text" name="from_name" placeholder='your name ...' required/>
 
-        <label>Email</label>
+        <label>{t('contact_us.email')}</label>
         <input type="email" name="email" placeholder='your email ...'/>
 
-        <label>Phone Number</label>
+        <label>{t('contact_us.phone')}</label>
         <input type="tel" name="phone" placeholder='your phone number ...'/>
 
-        <label>Message</label>
+        <label>{t('contact_us.message')}</label>
         <textarea name="message" placeholder='your message ...' required/>
 
-        <label>Building #</label>
+        <label>{t('contact_us.building')} #</label>
         <select name="building" required>
             <option disabled selected value=""> -- Select your building number -- </option>
             <option value="139-10_Building1">139-10 (Building #1)</option>
@@ -64,7 +67,7 @@ function ContactPage(){
             <option value="141-16_Building3">141-16 (Building #3)</option>
         </select>
 
-        <label>Apartment #</label>
+        <label>{t('contact_us.apartment')} #</label>
         <select name="apartment" required>
             <option disabled selected value=""> -- Select your apartment number -- </option>
             {retriveApartmentNumbers().map((apt) =>

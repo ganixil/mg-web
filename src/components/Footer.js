@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo_large.png';
 import '../styles/Footer.css';
+import { useTranslation } from "react-i18next";
 function Footer(){
+    const {t} = useTranslation();
+
     return (
         <footer className="footer">
             <div className="footer_content">
@@ -11,11 +14,11 @@ function Footer(){
                 </div>
                 <nav>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/news">News</Link></li>
-                        <li><Link to="/board">Board</Link></li>
-                        <li><Link to="/contact">Contact Us</Link></li>
+                        <li><Link to="/">{t('app.home')}</Link></li>
+                        <li><Link to="/about">{t('app.about')}</Link></li>
+                        <li><Link to="/news">{t('app.news')}</Link></li>
+                        <li><Link to="/event">{t('app.event')}</Link></li>
+                        <li><Link to="/contact">{t('app.contact_us')}</Link></li>
                     </ul>
                 </nav>
                 <div className='contactUs_footer'>

@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { gapi } from "gapi-script";
 import "../styles/Calendar.css";
+import { useTranslation } from "react-i18next";
 function Calendar(){
     const [events, setEvents] = useState([]);
+    const {t} = useTranslation();
     const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
     const CAL_ID = process.env.REACT_APP_GOOGLE_CALENDAR_ID;
     const getEvents = (calendarID, apiKey) => {
@@ -56,7 +58,7 @@ function Calendar(){
     return(
       <div className="eventContainer">
         <h1 className="eventTitle">
-            Events
+            {t('home.event.event-title')}
         </h1>
         <ul className = "events">
             {events?.map((event) => (
@@ -71,7 +73,7 @@ function Calendar(){
             ))}
             </ul>
             <button className="showMore" type="button">
-              <Link to="/event">More Events</Link>
+              <Link to="/event">{t('home.event.more')}</Link>
             </button>  
       </div>  
     )

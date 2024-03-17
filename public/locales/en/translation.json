@@ -1,0 +1,41 @@
+{
+    "app":{
+        "home": "Home",
+        "about":"About",
+        "news":"News",
+        "event":"Event",
+        "document":"Document",
+        "contact_us":"Contact Us"
+    },
+    "home":{
+        "p_msg":"President's Message",
+        "coop_news":{
+            "title": "Coop News",
+            "more":"Show More",
+            "less":"Show Less"
+        },
+        "about":"About Mitchell Gardens #1 Coop Corp",
+        "document":"Helpful Document",
+        "event": {
+            "event-title":"Events",
+            "more":"More Events"
+        }
+    },
+    "contact_us":{
+        "title":"Contact Us",
+        "topic":"Topic",
+        "name":"Name",
+        "email":"Email",
+        "phone":"Phone",
+        "message":"Message",
+        "building":"Building",
+        "apartment":"Apartment"
+    },
+    "language-selector":{
+        "label": "Lanugages",
+        "languages":{
+            "en":"English",
+            "zh":"中文"
+        }
+    }
+}

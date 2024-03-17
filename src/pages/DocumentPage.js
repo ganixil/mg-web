@@ -7,11 +7,13 @@ import doc5 from '../assets/documents/DummyTextFile.txt';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
 import '../styles/pages/DocumentPage.css';
+import { useTranslation } from 'react-i18next';
 function DocumentPage(){
+    const {t} = useTranslation();
 
     return(
         <div className='documentPage'>
-            <h1>Helpful Documents</h1>
+            <h1>{t('home.document')}</h1>
             <table>
                 <tr>
                     <th>File Name</th>

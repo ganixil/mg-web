@@ -7,10 +7,13 @@ import doc5 from '../assets/documents/DummyTextFile.txt';
 import "../styles/Document.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile, faDownload } from '@fortawesome/free-solid-svg-icons';
+import {useTranslation} from "react-i18next";
 function Document(){
+    const {t} = useTranslation();
+
     return(
         <div className='documentContainer'>
-            <h1><Link to="/document"> Helpful Documents</Link></h1>
+            <h1><Link to="/document">{t('home.document')}</Link></h1>
             <ul>
                 <li>
                     <Link to={doc1} target="_blank" download>

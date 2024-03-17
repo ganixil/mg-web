@@ -1,0 +1,41 @@
+{
+    "app":{
+        "home": "",
+        "about":"",
+        "news":"",
+        "event":"",
+        "document":"",
+        "contact_us":""
+    },
+    "home":{
+        "p_msg":"",
+        "coop_news":{
+            "title": "",
+            "more":"",
+            "less":""
+        },
+        "about":"",
+        "document":"",
+        "event": {
+            "event-title":"",
+            "more":""
+        }
+    },
+    "contact_us":{
+        "title":"",
+        "topic":"",
+        "name":"",
+        "email":"",
+        "phone":"",
+        "message":"",
+        "building":"",
+        "apartment":""
+    },
+    "language-selector":{
+        "label": "",
+        "language":{
+            "en":"",
+            "zh":""
+        }
+    }
+}

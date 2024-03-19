@@ -45,6 +45,7 @@ function News(){
                 <div key={index} className='newsWrapper'>
                     <Link to='/news/article' state={{ title: article.title,
                                                      content: article.translated, 
+                                                     images: article.images,
                                                      date: article?.date?.toDate().toDateString()}}>
                         <div className='news-title'>
                             <p><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 

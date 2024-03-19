@@ -32,7 +32,7 @@ function NewsPage(){
         <div className='newsPage'>
            {articles.map((article, index) => 
                 <div key={index} className='newsWrapper'>
-                    <Link to='/news/article' state={{ title: article.title, content: article.translated, date: article?.date?.toDate().toDateString()}}>
+                    <Link to='/news/article' state={{ title: article.title, content: article.translated, images: article.images, date: article?.date?.toDate().toDateString()}}>
                         <div className='news-title'>
                             <p><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 
                             {article?.date?.toDate().toDateString()} &nbsp; 

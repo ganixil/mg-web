@@ -17,7 +17,7 @@ function ArticlePage(){
     useEffect(() => {
         const fetchImageUrls = async() => {
             const urls = [];
-            if(images !== undefined && images.length != 0){
+            if(images !== undefined && images.length !== 0){
                 for(const image of images){
                     if(!image){
                         console.error("invalid image reference");
@@ -49,7 +49,6 @@ function ArticlePage(){
             <h3 className="date">{date}</h3>
             <div className="content">{parse(translateContent(content))}</div>
             <div>
-                {console.log(imageUrls)}
             {imageUrls.map((url, index)=>
                 <div><img key={index} src={url} alt={`Image ${index}`} /></div>
             )}

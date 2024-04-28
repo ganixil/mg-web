@@ -16,6 +16,8 @@ function News(){
     const {t, i18n} = useTranslation();
     const _ = require('lodash');
     const ArticleCollectionRef = collection(db, "articleCollections");
+
+    // retrieve article data and sorted by date
     useEffect(() => {
         const getArticlesData = async () =>{
             const data = await getDocs(query(ArticleCollectionRef, orderBy("date", "desc")));
@@ -24,8 +26,10 @@ function News(){
         getArticlesData()
     },[])
 
+    // only display 4 to 8 articles in the main page
     const dataForDisplay = expanded ? articles.slice(0,8) : articles.slice(0,4);
 
+    // shorten whole article into small descriptions
     const concise = (html) => {
         return React.Children.toArray(parse(html).props.children)[0];
     }
@@ -55,7 +59,7 @@ function News(){
                             <h3 className='articleTitle'>{article.title}</h3>
                             </div>
                         </div> 
-                        <p>{concise(getContent(article))} ...</p>
+                        <div>{concise(getContent(article))} ...</div>
                     </Link>
                 </div>
                 

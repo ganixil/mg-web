@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {db} from "../firebase-config";
 import {collection, getDocs, query, orderBy} from "@firebase/firestore";
 import { useTranslation } from "react-i18next";
+import parse from 'html-react-parser';
 import '../styles/PresidentMessage.css';
 function PresidentMessage(){
     // retrieve president's message from firestore
@@ -20,7 +21,7 @@ function PresidentMessage(){
     return(
         <div className="presMessage">
             <h1>{t('home.p_msg')}</h1>
-            {message.length > 0 ? <p>{message[0].p_message}</p> : <p>Currently
+            {message.length > 0 ? <div>{parse(message[0].p_message)}</div> : <p>Currently
                 there is no message</p>}
         </div>
     );

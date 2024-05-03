@@ -44,7 +44,7 @@ function Document() {
         <div className='documentContainer'>
             <h1><Link to="/document">{t('home.document')}</Link></h1>
             <ul>
-                {files.map((file, index) => (
+                {files.slice(0,5).map((file, index) => (
                     <li key={index}>
                         <Link to={file.downloadURL} target="_blank" download>
                             <FontAwesomeIcon icon={faFile} /> &nbsp;

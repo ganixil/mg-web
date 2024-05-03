@@ -24,11 +24,13 @@ function Footer(){
                 <div className='contactUs_footer'>
                     <h3>Contact US at <a href="mailto:mitchellgardens1@aol.com">mitchellgardens1@aol.com</a></h3>
                     <h4>Mitchell Gardens #1 Coop Corp</h4>
-                    <h4>139-10-16 28th Road</h4>
-                    <h4>140-08-14 28th Road</h4>
-                    <h4>141-10-16 28th Avenue</h4>
-                    <h4>Phone Number: xxx-xxx-xxxx</h4>
-                    <h4>Office Hours: M-F 9AM-1PM</h4>
+                    <h4>139-10/16 28th Road</h4>
+                    <h4>140-08/14 28th Road</h4>
+                    <h4>141-10/16 28th Avenue</h4>
+                    <h4>Phone Number: (718) 463-8380</h4>
+                    <h4>Office Hours: </h4>
+                    <h4> M-T-W-F 9AM-Noon</h4>
+                    <h4>TH: 1PM-4PM</h4>
                 </div>
             </div>
                 

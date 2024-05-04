@@ -35,7 +35,8 @@
         "label": "语言",
         "languages":{
             "en":"English",
-            "zh":"中文"
+            "zh":"中文",
+            "es":"español"
         }
     }
 }

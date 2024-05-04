@@ -1,0 +1,42 @@
+{
+    "app":{
+        "home": " Inicio",
+        "about":"Acerca de",
+        "news":" Noticias",
+        "event":"Eventos",
+        "document":"Documentos",
+        "contact_us":"Contáctanos"
+    },
+    "home":{
+        "p_msg":"Mensaje del Presidente",
+        "coop_news":{
+            "title": "Noticias de la Cooperativa",
+            "more":"Más",
+            "less":"Menos"
+        },
+        "about":"Acerca de la Cooperativa",
+        "document":"Documentos útiles",
+        "event": {
+            "event-title":"Eventos",
+            "more":"Más"
+        }
+    },
+    "contact_us":{
+        "title":"Contáctanos",
+        "topic":"Tema",
+        "name":"Nombre",
+        "email":"Correo electrónico",
+        "phone":"Teléfono",
+        "message":"Mensaje",
+        "building":"Edificio",
+        "apartment":"Apartamento"
+    },
+    "language-selector":{
+        "label": "Idioma",
+        "language":{
+            "en":"English",
+            "zh":"中文",
+            "es":"español"
+        }
+    }
+}

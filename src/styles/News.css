@@ -15,7 +15,6 @@
 }
 .coopNews{
     width:100%;
-    height: 32px;
     background-color: lightgray;
     color: black;
     border-bottom: 1px solid darkgray;
@@ -24,6 +23,7 @@
 }
 .coopNews h2{
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 /** style for new article tag **/
 .newsWrapper{

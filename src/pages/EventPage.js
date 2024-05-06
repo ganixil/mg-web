@@ -1,5 +1,6 @@
 import React from "react";
 import Calendar from "@ericz1803/react-google-calendar";
+import '../styles/pages/EventPage.css'
 import { css } from "@emotion/react";
 function EventPage(){
     const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -25,7 +26,7 @@ function EventPage(){
     const language = "EN";
 
     return(
-        <div>
+        <div className="eventPage">
             <Calendar 
                 apiKey={API_KEY} 
                 calendars={calendars}

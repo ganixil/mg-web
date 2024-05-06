@@ -1,12 +1,14 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 @media only screen and (min-width:30rem){
-    .image-gallery{
-        margin:0 auto;
-        max-width: 900px;
+    .imageGalleryWrapper{
+        max-width: 1200px; /* Set maximum width for the gallery */
+        margin: 0 auto; /* Center the gallery horizontally */
     }
-    .image-gallery-slides {
-        max-height: 550px;
+
+    .imageGalleryWrapper .image-gallery-slide img{
+        object-fit: contain; /* This ensures the image maintains its aspect ratio */
+        max-height: 100%; /* Set maximum height */
+        max-width: 100%; /* Set maximum width */
     }
-    
 }

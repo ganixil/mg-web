@@ -3,6 +3,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+    max-width: 1080px; /* Adjust max-width as needed */
+    height: 80vh;
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px; /* Add padding to content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: white;
 }
 .contactus_form input[type=text],input[type=email],input[type=tel],textarea, select {
     width: 100%;

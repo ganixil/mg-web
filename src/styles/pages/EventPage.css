@@ -1,19 +1,10 @@
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-/* responsive design */
-
-.home {
+.eventPage{
     position: relative;
     z-index: 1;
     max-width: 1080px; /* Adjust max-width as needed */
+    height: 80vh;
     margin: 0 auto; /* Center content horizontally */
     padding: 20px; /* Add padding to content */
     box-sizing: border-box; /* Include padding in width calculation */
     background-color: white;
-}
-
-@media only screen and (min-width:30rem){
 }

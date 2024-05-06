@@ -1,13 +1,14 @@
-
 .AppContainer {
   text-align: center;
+  position: relative;
+  width: 100%;
 }
 
-@media only screen and (min-width:30rem){
-  .AppContainer{
+
+@media only screen and (min-width:30rem) {
+  /* .AppContainer{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+  } */
 }
-

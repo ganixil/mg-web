@@ -1,6 +1,9 @@
 .navbar{
     font-size: 100%;
     font-family: "Helvetica",sans-serif;
+    transition: .3s;
+    position: relative;
+    z-index: 2;
 }
 
 .navigation{
@@ -17,6 +20,30 @@
     line-height: 1;
     border-bottom: 1px dotted #ddd;
 } 
+
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000; 
+}
+
+/*burger icon */
+.burger{
+    visibility: visible;
+    border-bottom: 1px dotted #ddd;
+    padding-top:3px;
+}
+
+.burger:active{
+    background-color: #146196;
+}
+
+/* mobile navbar dropdown */
+.active-nav{
+    display: none;
+}
 
 /* styling logo */
 .logo{
@@ -70,6 +97,10 @@
         height :40px;
         width: 40px;
         padding-top:0.5rem;
+    }
+
+    .burger{
+        display: none;
     }
 
 }

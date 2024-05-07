@@ -44,16 +44,16 @@ function ArticlePage(){
     }
 
     return (
-        <>
+        <div className="articlePage">
             <h1 className="title">{title}</h1>
             <h3 className="date">{date}</h3>
             <div className="content">{parse(translateContent(content))}</div>
             <div>
             {imageUrls.map((url, index)=>
-                <div><img key={index} src={url} alt={`Image ${index}`} /></div>
+                <div><img className="articleImage" key={index} src={url} alt={`Image ${index}`} /></div>
             )}
             </div>
-        </>
+        </div>
     );
 }
 

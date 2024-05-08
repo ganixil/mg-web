@@ -7,21 +7,21 @@ import '../styles/PresidentMessage.css';
 function PresidentMessage(){
     // retrieve president's message from firestore
     const [message, setMessage] = useState([]);
-    const MiscCollectionRef = collection(db, "miscCollection");
+    const MiscCollectionRef = collection(db, "pMessageCollection");
     useEffect(() => {
         const getMessageData = async () =>{
-            const data = await getDocs(query(MiscCollectionRef, orderBy("date", "desc")));
+            const data = await getDocs(query(MiscCollectionRef));
             setMessage(data.docs.map((elem) => ({ ...elem.data(), id:elem.id})));
         }
         getMessageData()
     },[])
     
-    const {t} = useTranslation();
+    const {t, i18n} = useTranslation();
 
     return(
         <div className="presMessage">
             <h1>{t('home.p_msg')}</h1>
-            {message.length > 0 ? <div>{parse(message[0].p_message)}</div> : <p>Currently
+            {message.length > 0 ? <div>{parse(message[0].message_translated[i18n.language])}</div> : <p>Currently
                 there is no message</p>}
         </div>
     );

@@ -78,6 +78,17 @@ p {
     color: #666;
 }
 
+/* Style for important news indicator */
+.important-news-indicator {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid red; /* Create a triangle */
+    border-right: 20px solid transparent;
+  }
+
 /** style for showmore **/
 .showMore{
     border: none;

@@ -37,6 +37,18 @@ function News(){
         return article.translated[currentLanguage];
     }
 
+    const isRecentNews = (newsDate) => {
+        const today = new Date();
+        const limit = 10;
+        const limitDate = new Date();
+        limitDate.setDate(today.getDate() - limit);
+
+        if(newsDate >= limitDate){
+            return true;
+        }
+        return false;
+    }
+
     return(
         <div className="articleContainer">
             <div className='coopNews'>
@@ -49,16 +61,8 @@ function News(){
                                                      content: article.translated, 
                                                      images: article.images,
                                                      date: article?.date?.toDate().toDateString()}}>
-                        {/* <div className='news-title'>
-                            <p><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 
-                            {article?.date?.toDate().toDateString()} &nbsp; 
-                            </p>
-                            <div className='articleTitle-container'>
-                            <h3 className='articleTitle'>{article.title}</h3>
-                            </div>
-                        </div> 
-                        <div>{concise(getContent(article))} ...</div> */}
                         <article class="newspaper-news-article">
+                            {isRecentNews(article.date.toDate()) ? (<div class="important-news-indicator"></div>) : null}
                             <h2 class="newspaper-news-title">{article.title}</h2>
                             <p class="newspaper-news-abbreviation">{concise(getContent(article))} ... </p>
                             <p class="newspaper-news-date"><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 

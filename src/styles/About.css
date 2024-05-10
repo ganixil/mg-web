@@ -6,8 +6,7 @@
 
 @media only screen and (min-width:30rem){
     .aboutContainer{
-        margin-left: 1rem;
-        background-image: linear-gradient(to right, #8dffbe, white 30%);
+        background-image: linear-gradient(to right, white 30%, #8dffbe);
         border-bottom: 1px solid gray;
     }
 }

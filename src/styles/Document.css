@@ -28,7 +28,7 @@
         grid-template-columns: 30% 70%;
         width: 100%;
         /* height: 100%; */
-        background-image: linear-gradient(to right,white 30%, #8dffbe);
+        background-image: linear-gradient(to right,white 30%, #66c0b9);
         border-bottom: 1px solid gray;
     }
 

@@ -11,8 +11,7 @@
         "p_msg":"管理委员的一段话",
         "coop_news":{
             "title": "Coop 新闻",
-            "more":"更多新闻",
-            "less":"收起"
+            "more":"更多新闻"
         },
         "about":"有关 Mitchell Gardens #1 Coop Corp",
         "document":"有帮助的文件",

@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     max-width: 1080px; /* Adjust max-width as needed */
-    height: 80vh;
+    min-height: 80vh;
     margin: 0 auto; /* Center content horizontally */
     padding: 20px; /* Add padding to content */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -11,6 +11,44 @@
 .newsPage div a{
     text-decoration: none;
 }
+/* Style for the vertical news section container */
+.vertical-news-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style for individual vertical news articles */
+  .vertical-news-article {
+    margin-bottom: 40px;
+  }
+  
+  /* Style for vertical news title */
+  .vertical-news-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for vertical news abbreviation */
+  .vertical-news-abbreviation {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for vertical news date */
+  .vertical-news-date {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  /* Style for news divider */
+  .news-divider {
+    border: 1px solid #ccc; /* Divider line */
+    margin: 20px 0; /* Margin above and below the divider */
+  }
 
 @media only screen and (min-width:30rem){
     .newsPage{

@@ -9,8 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {useTranslation} from "react-i18next";
 import '../styles/News.css';
 function News(){
-    // an expand panel implementation
-    const [expanded, setExpanded] = useState(false);
     // retrieve article from firestore
     const [articles, setArticles] = useState([]);
     const {t, i18n} = useTranslation();
@@ -27,7 +25,7 @@ function News(){
     },[])
 
     // only display 4 to 8 articles in the main page
-    const dataForDisplay = expanded ? articles.slice(0,8) : articles.slice(0,4);
+    const dataForDisplay = articles.slice(0,4);
 
     // shorten whole article into small descriptions
     const concise = (html) => {
@@ -42,16 +40,16 @@ function News(){
     return(
         <div className="articleContainer">
             <div className='coopNews'>
-                <Link to="/news"><h2>{t('home.coop_news.title')}</h2></Link>
+                <Link to="/news"><h1>{t('home.coop_news.title')}</h1></Link>
             </div>
-          
+            <div className="newspaper-news-section">
             {dataForDisplay.map((article, index) => 
                 <div key={index} className='newsWrapper'>
                     <Link to='/news/article' state={{ title: article.title,
                                                      content: article.translated, 
                                                      images: article.images,
                                                      date: article?.date?.toDate().toDateString()}}>
-                        <div className='news-title'>
+                        {/* <div className='news-title'>
                             <p><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 
                             {article?.date?.toDate().toDateString()} &nbsp; 
                             </p>
@@ -59,14 +57,19 @@ function News(){
                             <h3 className='articleTitle'>{article.title}</h3>
                             </div>
                         </div> 
-                        <div>{concise(getContent(article))} ...</div>
+                        <div>{concise(getContent(article))} ...</div> */}
+                        <article class="newspaper-news-article">
+                            <h2 class="newspaper-news-title">{article.title}</h2>
+                            <p class="newspaper-news-abbreviation">{concise(getContent(article))} ... </p>
+                            <p class="newspaper-news-date"><FontAwesomeIcon icon={faNewspaper}/> &nbsp; 
+                            {article?.date?.toDate().toDateString()} &nbsp; </p>
+                        </article>
                     </Link>
                 </div>
                 
             )}
-            <button className="showMore" type="button" onClick={()=> setExpanded(!expanded)}>
-                    {expanded ? t('home.coop_news.less'): t('home.coop_news.more')}
-            </button>  
+            </div>
+            <Link to="/news" className="showMore">{t('home.coop_news.more')}</Link>
         </div>
     );
 }

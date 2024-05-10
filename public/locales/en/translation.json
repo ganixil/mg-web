@@ -11,8 +11,7 @@
         "p_msg":"President's Message",
         "coop_news":{
             "title": "Coop News",
-            "more":"Show More",
-            "less":"Show Less"
+            "more":"More News"
         },
         "about":"About Mitchell Gardens #1 Coop Corp",
         "document":"Helpful Document",

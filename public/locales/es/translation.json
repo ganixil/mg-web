@@ -11,8 +11,7 @@
         "p_msg":"Mensaje del Presidente",
         "coop_news":{
             "title": "Noticias de la Cooperativa",
-            "more":"Más",
-            "less":"Menos"
+            "more":"Más Noticias"
         },
         "about":"Acerca de la Cooperativa",
         "document":"Documentos útiles",

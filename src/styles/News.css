@@ -1,73 +1,107 @@
-
-.articleContainer h2, p{
+.articleContainer h1 {
+   margin-block-start: 5px;
+   margin-block-end: 5px;
+}
+.articleContainer h2,
+p {
     padding-left: 0.5rem;
     text-align: left;
-}
-.articleContainer h1{
-    color: black
-}
-.articleContainer a{
-    text-decoration: none;
     color: black;
 }
-.articleContainer p{
+
+
+.articleContainer p {
     color: darkgray;
 }
-.coopNews{
-    width:100%;
+
+.coopNews {
+    width: 100%;
     background-color: lightgray;
     color: black;
     border-bottom: 1px solid darkgray;
     margin-left: 2px;
-    margin-right:2px;
-}
-.coopNews h2{
-    margin-left: 5px;
-    margin-bottom: 5px;
-}
-/** style for new article tag **/
-.newsWrapper{
-    border-bottom: 1px solid darkgray;
-}
-.news-title {
-    display: grid;
-    grid-template-columns: 35% 65%;
-}
-.news-title p, h3{
-    display: inline;
-    text-align:left;
-}
-.articleTitle-container{
-    padding-top:13px;
-    text-align:left;
-}
-.articleTitle{
-    color: black;
-}
-.tag{
-    color: red;
-}
-/** style for button **/
-.showMore{
-    width: 100%;
-    height: 30px;
-    background-color: darkgray;
-    color: white;
-    text-decoration:solid;
+    margin-right: 2px;
 }
 
-@media only screen and (min-width:30rem){
-    .articleContainer{
-        margin-left: 1rem;
-        margin-right: 1vw;
+.coopNews h2 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.coopNews a{
+    text-decoration: none;
+    color: black;
+}
+
+.newspaper-news-section {
+    margin-top: 10px;
+}
+
+.newsWrapper a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Style for individual newspaper news articles */
+.newspaper-news-article {
+    break-inside: avoid-column;
+    /* Avoid splitting articles across columns */
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    /* Add border */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+/* Style for newspaper news title */
+.newspaper-news-title {
+    font-size: 22px;
+    font-family: Georgia, serif;
+    /* Use a serif font for a classic newspaper feel */
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Style for newspaper news abbreviation */
+.newspaper-news-abbreviation {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style for newspaper news date */
+.newspaper-news-date {
+    font-size: 14px;
+    font-family: Georgia, serif;
+    color: #666;
+}
+
+/** style for showmore **/
+.showMore{
+    border: none;
+    background-color: white;
+    color: red;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width:30rem) {
+    .articleContainer {
         height: auto;
         margin-bottom: 1rem;
-   
+
     }
-    .showMore{
-        border: none;
-        background-color: white;
-        color:red;
-        text-decoration: underline;
+
+    
+
+    /* Style for the newspaper news section container */
+    .newspaper-news-section {
+        margin: 0 auto;
+        padding: 20px 0 20px 0;
+        column-count: 4;
+        /* Display articles in four columns */
+        column-gap: 20px;
+        /* Gap between columns */
     }
 }

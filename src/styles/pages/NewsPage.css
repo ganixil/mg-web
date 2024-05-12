@@ -1,7 +1,6 @@
 .newsPage{
     position: relative;
     z-index: 1;
-    max-width: 1080px; /* Adjust max-width as needed */
     min-height: 80vh;
     margin: 0 auto; /* Center content horizontally */
     padding: 20px; /* Add padding to content */
@@ -13,7 +12,7 @@
 }
 /* Style for the vertical news section container */
 .vertical-news-section {
-    max-width: 800px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -52,7 +51,7 @@
 
 @media only screen and (min-width:30rem){
     .newsPage{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }

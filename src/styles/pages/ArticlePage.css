@@ -8,6 +8,13 @@
     box-sizing: border-box; /* Include padding in width calculation */
     background-color: white;
 }
+.articleContent{
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-height: 75vh;
+}
 .title{
    text-align: center; 
 }

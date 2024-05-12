@@ -5,53 +5,55 @@ import { getStorage, ref, getDownloadURL } from 'firebase/storage'
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 
-function ArticlePage(){
+function ArticlePage() {
     const location = useLocation();
-    const { title, content, images, date} = location.state;
-    const {t, i18n} = useTranslation();
+    const { title, content, images, date } = location.state;
+    const { t, i18n } = useTranslation();
     const storage = getStorage();
 
 
     const [imageUrls, setImageUrls] = useState([]);
-   
+
     useEffect(() => {
-        const fetchImageUrls = async() => {
+        const fetchImageUrls = async () => {
             const urls = [];
-            if(images !== undefined && images.length !== 0){
-                for(const image of images){
-                    if(!image){
+            if (images !== undefined && images.length !== 0) {
+                for (const image of images) {
+                    if (!image) {
                         console.error("invalid image reference");
                         continue;
                     }
-                    try{
-                        const url = await getDownloadURL( ref(storage, image));
+                    try {
+                        const url = await getDownloadURL(ref(storage, image));
                         urls.push(url);
-                    }catch(error){
+                    } catch (error) {
                         console.log("Error fetch images", error);
                     }
                 }
                 setImageUrls(urls);
-                }
-            
+            }
+
         }
         fetchImageUrls();
     }, [images]);
 
 
-    const translateContent = (content)=>{
+    const translateContent = (content) => {
         const currentLanguage = i18n.language;
         return content[currentLanguage];
     }
 
     return (
         <div className="articlePage">
-            <h1 className="title">{title}</h1>
-            <h3 className="date">{date}</h3>
-            <div className="content">{parse(translateContent(content))}</div>
-            <div>
-            {imageUrls.map((url, index)=>
-                <div><img className="articleImage" key={index} src={url} alt={`Image ${index}`} /></div>
-            )}
+            <div className="articleContent">
+                <h1 className="title">{title}</h1>
+                <h3 className="date">{date}</h3>
+                <div className="content">{parse(translateContent(content))}</div>
+                <div>
+                    {imageUrls.map((url, index) =>
+                        <div><img className="articleImage" key={index} src={url} alt={`Image ${index}`} /></div>
+                    )}
+                </div>
             </div>
         </div>
     );

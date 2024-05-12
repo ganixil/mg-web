@@ -30,6 +30,7 @@
         /* height: 100%; */
         background-image: linear-gradient(to right,white 30%, #66c0b9);
         border-bottom: 1px solid gray;
+        border-top-right-radius: 20px 20px;
     }
 
     .documentContainer ul li{

@@ -24,7 +24,7 @@ function News(){
         getArticlesData()
     },[])
 
-    // only display 4 to 8 articles in the main page
+    // only display 4     articles in the main page
     const dataForDisplay = articles.slice(0,4);
 
     // shorten whole article into small descriptions

@@ -9,10 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className='AppContainer'>
-        <Nav />
-        <ScrollToTop />
-        <Routing />
-        <Footer/>
+        <div><h1>Currently Under Maintenance</h1></div>
       </div>
     </BrowserRouter>    
   );

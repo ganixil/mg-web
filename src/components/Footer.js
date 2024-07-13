@@ -19,6 +19,7 @@ function Footer(){
                         <li><Link to="/news">{t('app.news')}</Link></li>
                         <li><Link to="/event">{t('app.event')}</Link></li>
                         <li><Link to="/contact">{t('app.contact_us')}</Link></li>
+                        <li><Link to="/privacy-policy">{t('app.privacy_policy')}</Link></li>
                     </ul>
                 </nav>
                 <div className='contactUs_footer'>

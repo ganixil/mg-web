@@ -5,7 +5,8 @@
         "news":" Noticias",
         "event":"Eventos",
         "document":"Documentos",
-        "contact_us":"Contáctanos"
+        "contact_us":"Contáctanos",
+        "privacy_policy":"Política de privacidad"
     },
     "home":{
         "p_msg":"Mensaje del Presidente",

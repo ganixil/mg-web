@@ -6,6 +6,7 @@ import ArticlePage from "./ArticlePage";
 import ContactPage from "./ContactPage";
 import EventPage from "./EventPage";
 import DocumentPage from "./DocumentPage";
+import PrivacyPage from "./PrivacyPage";
 function Routing() {
     return (
       <Routes>
@@ -23,7 +24,7 @@ function Routing() {
 
         <Route path="/news/article" element={<ArticlePage />}/>
 
-
+        <Route path="/privacy-policy" element={<PrivacyPage />} />
       </Routes>
     );
   }

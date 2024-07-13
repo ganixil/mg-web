@@ -23,7 +23,7 @@ function Footer(){
                     </ul>
                 </nav>
                 <div className='contactUs_footer'>
-                    <h3>Contact US at <a href="mailto:mitchellgardens1@aol.com">mitchellgardens1@aol.com</a></h3>
+                    <h3>Contact Us at <a href="mailto:mitchellgardens1@aol.com">mitchellgardens1@aol.com</a></h3>
                     <h4>Mitchell Gardens #1 Coop Corp</h4>
                     <h4>139-10/16 28th Road</h4>
                     <h4>140-08/14 28th Road</h4>

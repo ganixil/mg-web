@@ -6,8 +6,8 @@ function About(){
     return(
         <div className="aboutContainer">
             <h1>{t('home.about')}</h1>
-            <h3>Our History</h3>
-            <p><b>Currently Under Construction :)</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Welcome to Mitchell Gardens No. 1 Coop</h3>
+            <p>Located in the vibrant neighborhood of Flushing, New York, Mitchell Gardens No. 1 Co-op offers a unique blend of comfort, community, and convenience. Our cooperative housing community is situated at 13910 28th Road, nestled within a dynamic urban environment that provides easy access to a wide array of amenities and attractions.</p>
         </div>
     );
 }

@@ -5,7 +5,8 @@
         "news":"News",
         "event":"Event",
         "document":"Document",
-        "contact_us":"Contact Us"
+        "contact_us":"Contact Us",
+        "privacy_policy":"Privacy Policy"
     },
     "home":{
         "p_msg":"President's Message",

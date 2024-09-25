@@ -49,6 +49,7 @@ function Nav(){
                 <li className={`${expandNav ? "": "active-nav"}`}><Link to="/news">{t('app.news')}</Link></li>
                 <li className={`${expandNav ? "": "active-nav"}`}><Link to="/event">{t('app.event')}</Link></li>
                 <li className={`${expandNav ? "": "active-nav"}`}><Link to="/document">{t('app.document')}</Link></li>
+                <li className={`${expandNav ? "": "active-nav"}`}><Link to="/privacy-policy">{t('app.privacy_policy')}</Link></li>
                 <li className={`${expandNav ? "": "active-nav"}`}><Link to="/contact">{t('app.contact_us')}</Link></li>
                 <LanguageSelector />
             </ul>

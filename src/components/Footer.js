@@ -10,7 +10,7 @@ function Footer(){
             <div className="footer_content">
                 <div>
                     <img src={logo} alt='logo'/>
-                    <h4 className="copyright">&copy;2023 Mitchell Gardens Coop Corp</h4>
+                    <h4 className="copyright">&copy;2024 Mitchell Gardens Co-operative Corp.</h4>
                 </div>
                 <nav>
                     <ul>
@@ -18,13 +18,13 @@ function Footer(){
                         <li><Link to="/about">{t('app.about')}</Link></li>
                         <li><Link to="/news">{t('app.news')}</Link></li>
                         <li><Link to="/event">{t('app.event')}</Link></li>
-                        <li><Link to="/contact">{t('app.contact_us')}</Link></li>
                         <li><Link to="/privacy-policy">{t('app.privacy_policy')}</Link></li>
+                        <li><Link to="/contact">{t('app.contact_us')}</Link></li>
                     </ul>
                 </nav>
                 <div className='contactUs_footer'>
                     <h3>Contact Us at <a href="mailto:mitchellgardens1@aol.com">mitchellgardens1@aol.com</a></h3>
-                    <h4>Mitchell Gardens #1 Coop Corp</h4>
+                    <h4>Mitchell Gardens #1 Co-operative Corp.</h4>
                     <h4>139-10/16 28th Road</h4>
                     <h4>140-08/14 28th Road</h4>
                     <h4>141-10/16 28th Avenue</h4>
@@ -33,6 +33,9 @@ function Footer(){
                     <h4> M-T-W-F 9AM-Noon</h4>
                     <h4>TH: 1PM-4PM</h4>
                 </div>
+            </div>
+            <div className="disclaimer">
+                <p className="disclaimer-content"></p>
             </div>
                 
         </footer>

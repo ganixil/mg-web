@@ -35,7 +35,7 @@ function ContactPage(){
   
     return (
     <div>
-        <form className="contactus_form" ref={form} onSubmit={sendEmail}>
+        {/* <form className="contactus_form" ref={form} onSubmit={sendEmail}>
             <h1>{t('contact_us.title')}</h1>
             <label>{t('contact_us.topic')}</label>
             <select name="topic" required>
@@ -75,22 +75,17 @@ function ContactPage(){
                     <option value={apt}>{apt}</option>
                 )}
             </select>
-            <input type="submit" value="Send" />
-            <div>
-                <h3>Or Contact Us using below methods</h3>
+            <input type="submit" value="Send" /> 
+            </form>*/}
+            <div className='contactUsSec'>
+                <h3>Contact Us using below methods</h3>
                 <h4><a href="mailto:mitchellgardens1@aol.com">mitchellgardens1@aol.com</a></h4>
                 <h4>Mitchell Gardens #1 Co-operative Corp.</h4>
-                <h4>139-10/16 28th Road</h4>
-                <h4>140-08/14 28th Road</h4>
-                <h4>141-10/16 28th Avenue</h4>
                 <h4>Phone Number: (718) 463-8380</h4>
                 <h4>Office Hours: </h4>
-                <h4> M-T-W-F 9AM-Noon</h4>
+                <h4>M-T-W-F 9AM-Noon</h4>
                 <h4>TH: 1PM-4PM</h4>
             </div>
-            
-        </form>
-        
       </div>
 
     );

@@ -30,7 +30,7 @@ function Footer(){
                     <h4>141-10/16 28th Avenue</h4>
                     <h4>Phone Number: (718) 463-8380</h4>
                     <h4>Office Hours: </h4>
-                    <h4> M-T-W-F 9AM-Noon</h4>
+                    <h4>M-T-W-F 9AM-Noon</h4>
                     <h4>TH: 1PM-4PM</h4>
                 </div>
             </div>

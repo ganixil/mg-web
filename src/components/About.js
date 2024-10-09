@@ -1,13 +1,32 @@
+import { useEffect, useState } from "react";
+import {db} from "../firebase-config";
+import {collection, getDocs, query} from "@firebase/firestore";
+import { useTranslation } from "react-i18next";
+import parse from 'html-react-parser';
 import "../styles/About.css";
-import {useTranslation} from "react-i18next";
 function About(){
-    const {t} = useTranslation();
+    const AboutUsCollectionRef = collection(db, "aboutUsCollection");
+    const {i18n} = useTranslation();
+    const [aboutUs, setAboutUs] = useState([]);
+    const [expanded, setExpanded] = useState(false);
+    useEffect(() => {
+        const getAboutUsData = async () =>{
+            const data = await getDocs(query(AboutUsCollectionRef));
+            setAboutUs(data.docs.map((elem) => ({ ...elem.data(), id:elem.id})));
+        }
+        getAboutUsData()
+    },[])
 
     return(
         <div className="aboutContainer">
-            <h1>{t('home.about')}</h1>
-            <h3>Welcome to Mitchell Gardens No. 1 Co-operative Corp.</h3>
-            <p>Located in the vibrant neighborhood of Flushing, New York, Mitchell Gardens No. 1 Co-op offers a unique blend of comfort, community, and convenience. Our cooperative housing community is situated at 13910 28th Road, nestled within a dynamic urban environment that provides easy access to a wide array of amenities and attractions.</p>
+            <div class={`box ${expanded ? "expanded" : "collapsed"}`}>
+                {aboutUs.length === 0 ?(
+                    <p>Loading ...</p>
+                ):(parse(aboutUs[0].translated[i18n.language]))}
+            </div>
+            <button className="expandButton" onClick={() => setExpanded(!expanded)}>
+                {expanded ? "Collapse" : "Expand"}
+            </button>
         </div>
     );
 }

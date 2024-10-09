@@ -1,13 +1,47 @@
-.aboutContainer{
+.aboutContainer {
     width: 100%;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.aboutContainer li {
+    text-align: left;
+}
 
-@media only screen and (min-width:30rem){
-    .aboutContainer{
+.box {
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.collapsed {
+    height: 350px;
+    /* Fixed height */
+}
+
+.expanded {
+    height: auto;
+    /* Adjusts to content height */
+}
+
+.expandButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.expandButton:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (min-width:30rem) {
+    .aboutContainer {
+        margin-top: 10px;
         border-top-right-radius: 20px 20px;
         background-image: linear-gradient(to right, white 30%, #8dffbe);
         border-bottom: 1px solid gray;

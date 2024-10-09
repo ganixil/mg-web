@@ -7,7 +7,7 @@ import '../styles/pages/AboutPage.css'
 function AboutPage(){
 
     const AboutUsCollectionRef = collection(db, "aboutUsCollection");
-    const {t, i18n} = useTranslation();
+    const {i18n} = useTranslation();
     const [aboutUs, setAboutUs] = useState([]);
     useEffect(() => {
         const getAboutUsData = async () =>{

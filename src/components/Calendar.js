@@ -63,8 +63,8 @@ function Calendar(){
         <ul className = "events">
             {events?.map((event) => (
                 <li key={event.id} >
-                    <h4>{event.summary}</h4>
-                    <b>Location: {event.location ? event.location : 'NONE'}</b>
+                    <h3>{event.summary}</h3>
+                    <p>Location: <b>{event.location ? event.location : 'NONE'}</b></p>
                     
                     {event.start.date ? <p><b>{event.start.date}</b> to <b>{event.end.date}</b></p>
                      : <p><b>{convertTime(event.start.dateTime)}</b> to <b>{convertTime(event.end.dateTime)}</b></p>

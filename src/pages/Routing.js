@@ -24,6 +24,8 @@ function Routing() {
 
         <Route path="/news/article" element={<ArticlePage />}/>
 
+        <Route path="/news/article/:id" element={<ArticlePage />} />
+
         <Route path="/privacy-policy" element={<PrivacyPage />} />
       </Routes>
     );

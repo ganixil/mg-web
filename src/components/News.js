@@ -55,10 +55,12 @@ function News(){
                 <Link to="/news"><h1>{t('home.coop_news.title')}</h1></Link>
             </div>
             <div className="newspaper-news-section">
-            {dataForDisplay.map((article, index) => 
+            {dataForDisplay.map((article, index) => {
+                const uniquePath = `/news/article/${article.id}`;
+                return(
                 <div key={index} className='newsWrapper'>
-                    <Link to='/news/article' state={{ title: article.title,
-                                                     content: article.translated, 
+                    <Link to={uniquePath} state={{ title: article.title,
+                                                     translated: article.translated, 
                                                      images: article.images,
                                                      date: article?.date?.toDate().toDateString()}}>
                         <article class="newspaper-news-article">
@@ -69,9 +71,9 @@ function News(){
                             {article?.date?.toDate().toDateString()} &nbsp; </p>
                         </article>
                     </Link>
-                </div>
+                </div>);
                 
-            )}
+                })}
             </div>
             <Link to="/news" className="showMore">{t('home.coop_news.more')}</Link>
         </div>

@@ -15,6 +15,9 @@
     padding: 20px;
     min-height: 75vh;
 }
+.articleContent ol, ul{
+    text-align: left;
+}
 .title{
    text-align: center; 
 }

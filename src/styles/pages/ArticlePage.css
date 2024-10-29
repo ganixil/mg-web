@@ -15,7 +15,10 @@
     padding: 20px;
     min-height: 75vh;
 }
-.articleContent ol, ul{
+.articleContent ol{
+    text-align: left;
+}
+.articleContent ul{
     text-align: left;
 }
 .title{

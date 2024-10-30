@@ -5,6 +5,7 @@ import carousel2 from '../assets/images/carousel/carousel2.jpg';
 import carousel3 from '../assets/images/carousel/carousel3.jpg';
 import carousel4 from '../assets/images/carousel/carousel4.jpg';
 import carousel5 from '../assets/images/carousel/carousel5.jpg';
+import carousel6 from '../assets/images/carousel/carousel6.jpg';
 import largelogo from '../assets/images/logo_large.png';
 function Gallery(){
     const images = [
@@ -31,6 +32,10 @@ function Gallery(){
         {
           original: carousel5,
           thumbnail: carousel5,
+        },
+        {
+          original: carousel6,
+          thumbnail: carousel6,
         },
     ];
     return(

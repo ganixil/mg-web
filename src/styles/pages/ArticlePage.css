@@ -31,6 +31,12 @@
     padding: 20px;
     font-size: 18px;
 }
+.imageContainer{
+    max-width: 1080px;
+}
+.imageBox{
+    max-width: 1080px;
+}
 .articleImage{
-    max-width: 80vw;
+    width: 100%;
 }

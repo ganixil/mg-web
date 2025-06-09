@@ -79,9 +79,9 @@ function ArticlePage() {
                 <h3 className="date">{dateString}</h3>
                 {console.log(article)}
                 <div className="content">{parse(translateContent(article.translated))}</div>
-                <div>
+                <div className="imageContainer">
                     {imageUrls.map((url, index) => (
-                        <div key={index}>
+                        <div key={index} className="imageBox">
                             <img className="articleImage" src={url} alt={`Image ${index}`} />
                         </div>
                     ))}
